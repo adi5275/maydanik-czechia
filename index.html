@@ -232,6 +232,19 @@ body.ed-on .ed-img,body.ed-on .ed-blur,body.ed-on .ed-shape,body.ed-on .ed-textb
 .ed-del{position:absolute;z-index:61;top:-15px;right:-15px;width:28px;height:28px;border-radius:50%;background:#ef4444;color:#fff;border:2px solid #fff;font-size:17px;font-weight:900;cursor:pointer;display:flex;align-items:center;justify-content:center;line-height:1;}
 
 </style>
+
+<script>
+/* expiry gate - the guide is valid through the trip; expires 2026-08-04 */
+(function(){
+  var expiry = new Date('2026-08-04T00:00:00+03:00');
+  if (new Date() < expiry) return;
+  document.documentElement.innerHTML =
+    '<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>המדריך כבר לא זמין</title></head>' +
+    '<body style="margin:0;font-family:sans-serif;background:#faf7f0;color:#24303a;direction:rtl;display:flex;align-items:center;justify-content:center;min-height:100vh;text-align:center;padding:24px">' +
+    '<div><div style="font-size:26px;font-weight:700;color:#123f52">המדריך הזה כבר לא זמין</div>' +
+    '<div style="margin-top:10px;font-size:17px;color:#5d6b76">החופשה הסתיימה והקישור פג תוקף.<br>SKY BY ADI AHARONI · DREAM IT. VISIT IT.</div></div></body>';
+})();
+</script>
 </head>
 <body>
 
